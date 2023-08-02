@@ -3,9 +3,9 @@ let circle = document.createElement("img");
 let square = document.createElement("img");
 let triangle = document.createElement("img");
 
-square.src="../images/square.bmp"
-circle.src="../images/circle.bmp"
-triangle.src="../images/triangle.bmp"
+square.src="images/square.jpg"
+circle.src="images/circle.jpg"
+triangle.src="images/triangle.jpg"
 
 let allFigures = [square,triangle,circle];
 let timersStash;
@@ -19,7 +19,7 @@ let create = false;
 let sumResult;
 let bestResult = 0;
 let stop = false;
-
+let a;
 //start
 $(document).keypress(function (press) {
   if(press.key === " " && !start){
@@ -38,7 +38,7 @@ function createFigure(){
   let randomItem = Math.floor(Math.random() * 3);
   let time = (Math.random() * 2 + 1)*1500;
   item = allFigures[randomItem];
-  setTimeout(()=>{
+   a = setTimeout(()=>{
     if(!stop){
    figure = $(".game").append(item);
    timer = Date.now();
@@ -58,7 +58,7 @@ function createFigure(){
   })
 
 
-
+//how much games left
   function calculating(){
     games++;
     if(games===10){
@@ -78,6 +78,7 @@ $(document).keypress((press)=>{
   if(press.key === " " && start && !create){
     start = false;
     stop = true;
+    clearTimeout(a);
     console.log("stop!")
     games = 0;
     $(".game-text").text("You Lost").show();
