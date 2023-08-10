@@ -20,32 +20,27 @@ nav{
   display: flex;
   align-items: center;
 }
-
-.start{
-  display: flex;
-  justify-content: center;
-  align-items:center;
+.red{
+  color: red;
+}
+.black{
+  color: black;
 }
 .container{
-  width: 200vh;
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container{
+  width: 90vh;
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 0;
 }
-.game{
-  width: 100vh;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container img{
-  width: 600px;
-  height: 600px;
-  margin-top: 100px;
-}
-.results{
-display: flex;
-justify-content: space-around;
+.button{
+font-size: 60px;
 }

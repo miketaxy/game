@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FirstGame(three figures)</title>
-  <link rel="stylesheet" href="firstgame/firstgame.css">
+  <title>Main page</title>
+  <link rel="stylesheet" href="indexAssets/index.css">
 </head>
 <body>
-  <div class="next-game"><a href="secondgame/secondGame.html">go to next game</a></div>
-  <div class="start"><h2 class="game-text">Press Space to start the game!</h2></div>
-  
-  <div class="container">
-    <div class="game">
-      
+  <nav class="nav-bar">
+    <div class="left-side">
+      <div class="logo"><a href="index.html"><img src="indexAssets/images/logo.png" alt="M"></a></div>
     </div>
+    <div class="right-side"></div>
+  </nav>
+  <div class="container">
+    <ul class="games">
+      <li><a href="firstgame/firstgame.html">First Game</a></li>
+      <li><a href="secondgame/secondGame.html">Second Game</a></li>
+      <li><a href="thirdgame/thirdGame.html">Third Game</a></li>
+      <li><a href="fourthGame/fourthGame.html">Fourth Game</a></li>
+      <li><a href="fifthgame/fifthgame.html">Fifth Game</a></li>
+      <li><a href="sixthgame/sixthGame.html">Sixth Game</a></li>
+    </ul>
   </div>
-  <div class="results">
-  <div class="best-result">Your best result: <span class="bestResult">0</span> ms</div>
-  <div class="last-result">Your last result: <span class="lastResult">0</span> ms</div>
-</div>
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="firstgame/firstgame.js"></script>
+  <script src="indexAssets/index.js"></script>
 </body>
 </html>

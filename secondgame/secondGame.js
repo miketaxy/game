@@ -77,7 +77,6 @@ function createFigure(){
       calculating();
       setTimeout(()=>{bsquare = false;},10);
       timer = Date.now() - timer;
-      console.log(timer);
       timersStash.push(timer);
       setTimeout(()=>{create = false;}, 10)
    
@@ -109,7 +108,6 @@ function createFigure(){
     stop = true;
     bsquare = false;
     clearTimeout(a);
-    console.log("stop!")
     games = 0;
     $(".game-text").text("You Lost").show();
     setTimeout(()=>{$(".game-text").text("Press Space to start the game");}, 1000)

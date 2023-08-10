@@ -20,6 +20,8 @@ let sumResult;
 let bestResult = 0;
 let stop = false;
 let a;
+
+
 //start
 $(document).keypress(function (press) {
   if(press.key === " " && !start){
