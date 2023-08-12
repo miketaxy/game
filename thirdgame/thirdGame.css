@@ -21,22 +21,18 @@ nav{
   align-items: center;
 }
 .container{
-  height: 100vh;
+  height: 95vh;
 }
 .line{
   height: 5px;
   width: 100vw;
 }
 .game-container{
-  height: 85vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
-.nav-bar{
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-}
+
 .triangle{
   height: 50px;
   width: 50px;
